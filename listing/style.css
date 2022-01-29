@@ -1,0 +1,287 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+  color: #4a4a4a;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+}
+
+.item {
+  cursor: pointer;
+  margin-bottom: 2rem;
+  transition: box-shadow .3s;
+  padding: 0 20px;
+}
+
+.item:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  background-color: #fff;
+}
+
+.item h4 {
+  margin: 1rem 0 0.5rem 0;
+}
+
+.item p {
+  margin: 0 0 1rem 0;
+}
+
+.item img {
+  width: calc(100% + 40px);
+  margin-left: -20px;
+  display: block;
+}
+
+.map {
+  height: 100vh;
+}
+
+.info{
+  display: inline-grid;
+  padding-left: 40px;
+  padding-bottom: 10px;
+}
+
+@media only screen and (min-width: 1100px) {
+
+  .container-bis {
+    display: grid;
+    grid-template-columns: 7fr 4fr;
+  }
+
+  .list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    padding: 0 30px;
+  }
+
+  .map {
+    background-color: #CCCCCC;
+    position: sticky!important;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .info{
+    display: -webkit-inline-box;
+    padding-left: 40px;
+    padding-bottom: 10px;
+  }
+  
+}
+
+.marker.leaflet-popup {
+  margin-bottom: 16px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+}
+
+.marker.leaflet-popup::after {
+  content:'';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -8px;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #FFF;
+}
+
+.marker .leaflet-popup-content-wrapper {
+  background: transparent;
+  color: inherit;
+  box-shadow: none;
+  text-align: inherit;
+}
+
+.marker .leaflet-popup-content {
+  text-align: inherit;
+  color: inherit;
+  margin: 0;
+}
+
+.marker .leaflet-popup-tip-container {
+  display: none;
+}
+
+.marker.is-active, .marker:hover {
+  z-index:300;
+  background-color: #5069ff;
+  color: #FFF;
+}
+
+.marker.is-active::after, .marker:hover::after {
+  border-top-color: #5069ff;
+}
+
+.marker.is-expanded {
+  background-color: #fff!important;
+  color: inherit!important;
+  z-index:301;
+  text-align: left;
+}
+
+.marker.is-expanded::after {
+  border-top-color: #FFF!important;
+}
+
+#logout_button {
+  display: flex;
+  justify-content: right;
+}
+
+.logout{
+  color:grey;
+}
+
+.btn-outline-secondary {
+  color: rgb(255, 89, 89);
+  border-color: rgb(255, 89, 89);
+}
+
+.mes_reservations {
+  text-align: center;
+}
+
+.modification {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  color: white;
+}
+
+.bg-img {
+  background: url("/uploads/login_banner.jpg") center center/cover no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.modal-content {
+  vertical-align: middle;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.navbar-brand {
+  width: 140px;
+  height: 68px;
+}
+
+.content {
+  padding: 20px;
+}
+
+.footer {
+  flex-shrink: 0;
+  padding: 20px;
+}
+
+.hello {
+  margin-top: 8.4px;
+}
+
+.logout {
+  color: #282828;
+}
+
+.booking {
+  color: #ff5707;
+}
+
+.orange {
+ color: #ff5707;
+}
+
+footer {
+  background-color: #282828;
+  bottom: 0;
+  width: 100%;
+  padding-top: 5px;
+  position: unset;
+  flex-shrink: 0;
+  display: flex;
+  color: #ff5707;
+}
+
+.copyright {
+  margin-top:8px;
+}
+
+.container-foo{
+  display: inline-flex;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+body {
+  font-family: "Lato", "Arial", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.tab-list__link {
+  display: block;
+  text-transform: uppercase;
+  font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  color: black;
+  padding-left: 40px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+h4 {
+  font-size: calc(1.07rem + .3vw) !important;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #ff5707;
+  border-color: #ff5707;
+}
+
+.btn-primary:hover{
+  color: #fff;
+  background-color: #282828;
+  border-color: #282828;
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: transparent;
+  border-color: #ff5707;
+}

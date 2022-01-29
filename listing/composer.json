@@ -1,0 +1,12 @@
+{
+    "name": "jonathan/map-marker",
+    "authors": [
+        {
+            "name": "Nicolas ",
+            "email": "nicolas.chalono@gmail.com"
+        }
+    ],
+    "require": {
+        "fakerphp/faker": "^1.16"
+    }
+}
